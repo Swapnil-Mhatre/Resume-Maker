@@ -1,75 +1,72 @@
-# React + TypeScript + Vite
+# Resume Maker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based Resume Maker application built with React and TypeScript that allows users to create and customize their resumes with a real-time preview and download them as PDF files.
 
-Currently, two official plugins are available:
+#### 🔗 Live Demo: Resume Maker
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* Interactive Editor: Enter and update your resume information through an intuitive editor panel.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Live Resume Preview: View your resume in real time as you make changes in the editor.
 
-## Expanding the ESLint configuration
+* PDF Download: Download your completed resume in PDF format.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Organized Layout: Separate editor and preview panels for a smooth resume-building experience.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* React 19 – Building the user interface with reusable components.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* TypeScript – Type safety and better code maintainability.
 
+* Vite – Development server and build tooling.
+
+* @react-pdf/renderer – Generating and downloading resumes in PDF format.
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+* Node.js
+
+* npm
+
+### Installation
+
+Clone the repository:
+```bash
+git clone https://github.com/Swapnil-Mhatre/Resume-Maker.git
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Navigate to the project directory:
+```bash
+cd Resume-Maker
+```
+Install dependencies:
+```bash
+npm install
+```
+Start the development server:
+```bash
+npm run dev
+```
+Open the local URL provided by Vite in your browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🎯 Project Objective
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+The goal of this project was to build a functional resume-building application while strengthening my understanding of React, TypeScript, component-based architecture, state management, and generating PDF documents.
+
+## 🔗 Links
+
+Live Application: https://swapnil-mhatre.github.io/Resume-Maker/
+
+GitHub Repository: https://github.com/Swapnil-Mhatre/Resume-Maker
+
+Developed by Swapnil Mhatre
 
 ```
